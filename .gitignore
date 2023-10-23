@@ -1,0 +1,28 @@
+# Виртуальные окружения
+venv/
+.venv/
+env/
+
+# IDE настройки
+.idea/
+.vscode/
+
+# Файлы базы данных
+dump.rdb
+backend/dump.rdb
+backend/db.sqlite3
+
+# Логи
+backend/logs
+
+# Временные файлы
+temp/
+backend/temp
+
+# Кэш Python
+__pycache__/
+
+# Файлы настроек и сборки
+/backend/.env
+
+# Прочее

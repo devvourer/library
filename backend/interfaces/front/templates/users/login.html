@@ -1,0 +1,15 @@
+{% extends 'users/base.html' %}
+
+{% block title %}Sign in{% endblock %}
+
+{% block content %}
+    <h1>Sign in</h1>
+    <p>Please sign in using the following form:</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><input type="submit" value="Sign in"></p>
+    </form>
+
+<p>If you don't have an account <a href="{% url 'user:register' %}">register here</a></p>
+{% endblock %}
